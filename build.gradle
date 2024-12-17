@@ -9,6 +9,18 @@ group= "team.creative" + project.mod_id
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
+java.sourceSets {
+    main {
+        java {
+            srcDirs = ["src/main/java", "src/forge/java"]
+        }
+        resources {
+            srcDirs = ["src/main/resources", "src/forge/resources"]
+        }
+    }
+}
+
+
 runs {  
     configureEach {
         workingDirectory project.file('run')

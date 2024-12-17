@@ -1,0 +1,39 @@
+plugins {
+    id 'fabric-loom' version '1.6+'
+    id 'com.modrinth.minotaur' version '2.+'
+}
+
+group = "team.creative"
+
+repositories {
+    maven {
+        url = "https://api.modrinth.com/maven"
+    }
+}
+
+java.sourceSets {
+    main {
+        java {
+            srcDirs = ["src/main/java", "src/fabric/java"]
+        }
+        resources {
+            srcDirs = ["src/main/resources", "src/fabric/resources"]
+        }
+    }
+}
+
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "maven.modrinth:modmenu:${project.modmenu_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    
+}
+
+modDependencies = []
+
+loom.mixin {
+    defaultRefmapName = "nodurabilitylost.mixins.refmap.json"
+}
