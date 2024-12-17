@@ -1,0 +1,25 @@
+{
+    "schemaVersion": 1,
+    "id": "nodurabilitylost",
+    "version": "1.0.0",
+    "name": "NoDurabilityLost",
+    "description": "A mod which prevents a tool from taking damage if there is no speed benefit in breaking the block.",
+    "authors": [
+        "CreativeMD"
+    ],
+    "license": "LGPL-3.0-only",
+    "icon": "nodurabilitylost.png",
+    "entrypoints": {
+        "common": [
+            "team.creative.nodurabilitylost.NoDurabilityLost"
+        ]
+    },
+    "mixins": [
+        "nodurabilitylost.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.15.11",
+        "fabric-api": "*",
+        "minecraft": ">=1.21"
+    }
+}
