@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+issueTrackerURL="https://github.com/CreativeMD/NoDurabilityLost/issues"
+license="LGPL-3.0-only"
+
+[[mods]]
+    modId="nodurabilitylost"
+    logoFile="nodurabilitylost.png"
+    version="1.0.0"
+    displayName="NoDurabilityLost"
+    displayURL="https://modrinth.com/mod/nodurabilitylost"
+    authors="CreativeMD"
+    description='''A mod which prevents a tool from taking damage if there is no speed benefit in breaking the block.'''
+
+[[dependencies.nodurabilitylost]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.nodurabilitylost]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1,1.22)"
+    ordering="NONE"
+    side="BOTH"
+
+[[mixins]]
+   config="nodurabilitylost.mixins.json"
+
