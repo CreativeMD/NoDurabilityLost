@@ -1,6 +1,6 @@
 package team.creative.nodurabilitylost;
 
-import net.neoforged.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod;
 
 @Mod("nodurabilitylost")
 public class NoDurabilityLost {}
