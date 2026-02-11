@@ -7,6 +7,11 @@
     "authors": [
         "CreativeMD"
     ],
+    "contact": {
+        "sources": "https://github.com/CreativeMD/NoDurabilityLost",
+        "homepage": "https://modrinth.com/mod/nodurabilitylost",
+        "issues": "https://github.com/CreativeMD/NoDurabilityLost/issues"
+    },
     "license": "LGPL-3.0-only",
     "icon": "nodurabilitylost.png",
     "entrypoints": {
