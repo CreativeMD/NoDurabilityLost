@@ -1,7 +1,7 @@
 {
     "schemaVersion": 1,
     "id": "nodurabilitylost",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "NoDurabilityLost",
     "description": "A mod which prevents a tool from taking damage if there is no speed benefit in breaking the block.",
     "authors": [
