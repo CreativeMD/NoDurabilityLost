@@ -10,7 +10,7 @@ plugins {
 
 group= "team.creative" + project.mod_id
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 java.sourceSets {
     main {
@@ -58,6 +58,8 @@ minecraft {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${project.property 'minecraft_version'}-${project.property 'forge_version'}"
+    
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
 modDependencies = []
