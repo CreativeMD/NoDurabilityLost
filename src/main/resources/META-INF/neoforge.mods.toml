@@ -5,7 +5,7 @@ license="LGPL-3.0-only"
 
 [[mods]]
     modId="nodurabilitylost"
-    logoFile="nodurabilitylost.png"
+    iconFile="nodurabilitylost.png"
     version="1.0.1"
     displayName="NoDurabilityLost"
     displayURL="https://modrinth.com/mod/nodurabilitylost"
