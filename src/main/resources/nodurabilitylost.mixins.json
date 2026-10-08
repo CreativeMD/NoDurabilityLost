@@ -2,7 +2,6 @@
     "required": true,
     "package": "team.creative.nodurabilitylost.mixin",
     "compatibilityLevel": "JAVA_21",
-    "refmap": "nodurabilitylost.mixin.refmap.json",
     "mixins": [
         "ItemMixin"
     ],
